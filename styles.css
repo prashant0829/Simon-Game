@@ -1,32 +1,42 @@
 body {
   text-align: center;
-  background-color: #011F3F;
+  background-color: #ffffff;
 }
 
 #level-title {
-  font-family: 'Press Start 2P', cursive;
+  font-family: "Montserrat", sans-serif;
   font-size: 3rem;
-  margin:  5%;
-  color: #FEF2BF;
+  margin: 8px;
+  color: #4b4343;
+}
+.heading-para{
+  color: rgb(106, 48, 133);
 }
 
-p{
-  font-family:'Press Start 2P', cursive ;
+p {
+  font-family: "Ubuntu", sans-serif;
+  font-size: larger;
+  margin: 4px;
+  color: grey;
 }
+
 .container {
-  display: block;
-  width: 50%;
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
   margin: auto;
-
 }
+
 
 .btn {
   margin: 25px;
   display: inline-block;
-  height: 200px;
-  width: 200px;
-  border: 10px solid black;
-  border-radius: 20%;
+  height: 150px;
+  width: 150px;
+  border: 10px solid rgb(248, 245, 245);
+  border-radius: 8px;
+  box-shadow: 0px 10px 20px -5px grey;
 }
 
 .game-over {
@@ -53,4 +63,39 @@ p{
 .pressed {
   box-shadow: 0 0 20px white;
   background-color: grey;
+}
+
+.start-button{
+  background-color: rgb(12, 108, 235);
+  border: none;
+  font-family:"Montserrat", sans-serif ;
+  font-size: 40px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.start-button:hover{
+  background-color: rgb(119, 154, 250);
+}
+
+@media (max-width:400px){
+  #level-title{
+    font-size: 2rem;
+    padding: 20px 0px;
+  }
+
+
+
+  .container{
+    width: 100%;
+  }
+  .btn{
+    width: 100px;
+    height: 100px;
+    margin: 15px;
+    border: 2px solid white;
+  }
+  .start-button{
+    font-size: 24px;
+  }
 }
